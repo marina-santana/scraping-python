@@ -19,7 +19,7 @@ while (id <= 118):
     soup = BeautifulSoup(content)
 
     def find_span(data_label, symbol):
-        formated_string = data_label.format(symbol)
+        formatted_string = data_label.format(symbol)
         href = soup.find(
             "a", {"data-label": formated_string})
 
